@@ -1,0 +1,138 @@
+/* begin styles for RSS Feed */
+.cover .rss-box { padding-left:20px; }
+
+.rss-box * { padding-top:0 !important;padding-right:0 !important;padding-bottom:0 !important;padding-left:0 !important; margin:0 !important; }
+.rss-box {
+//	margin: 10px 5% !important;
+//	padding: 4px 8px !important;
+	float:left !important;
+	background-color: #fff !important;
+	text-align:left;
+}
+
+.rss-title, rss-title a {
+	font-family: "Optima","Trebuchet MS",sans-serif !important;
+	font-size: 20px !important;
+	font-weight:bold !important;
+	margin: 5px 0 !important;
+	padding: 0 !important;
+	letter-spacing: .5px !important;
+	text-decoration:none !important;
+	color: #000099 !important;
+	border:none !important;
+}
+.rss-title a:hover { text-decoration: underline !important; }
+	
+.rss-title span.rss-item { font-size:12px !important; font-weight:normal !important; color:#000 !important; letter-spacing:0px !important; }
+
+.rss-items {
+  list-style-type: none !important; 
+  padding:0 !important;
+  overflow:hidden !important;
+}
+.rss-items li { 
+	
+display:-moz-inline-box; -moz-box-orient:vertical;
+display:inline-block; vertical-align:top; word-wrap:break-word; 
+/*	display:-moz-inline-stack !important; 
+	display:inline-stack !important; 
+	zoom:1 !important;
+	*display:inline !important;	
+	vertical-align:top !important; */
+	margin:0 !important; 
+	color: #000 !important; 
+//	width:225px !important; 
+	padding-right:5px !important; 
+}
+* html .rss-items li { display:inline; }
+* + html .rss-items li { display:inline; }
+* html .rss-items li { width:225px; }
+.rss-items li > * { display:table; table-layout:fixed; overflow:hidden; }
+	
+
+
+.rss-item  {
+  font-family: "Optima","Trebuchet MS",sans-serif !important;
+  font-size: 12px !important;
+  font-weight : normal !important; 
+  margin: 8px 0 !important;
+  line-height: 15px !important;
+  padding-bottom:5px !important;
+}
+
+.rss-item h3 { 
+  font-family: "Optima","Trebuchet MS",sans-serif !important;
+  font-size: 14px !important;	
+  font-weight:bold !important;
+  color: #000 !important;
+}
+.rss-item h3 a { font-style:italic; }
+
+.rss-item p {
+
+  color: #000 !important;
+}
+
+.rss-item a:link, .rss-item a:visited, .rss-item a:active {
+	text-decoration : none !important;
+	color: #000099 !important;
+	border:none !important;
+	}
+.rss-item a:hover { 
+	text-decoration : underline !important;
+	color: #0000bb !important;
+	}
+	
+.rss-item h2 { font-weight:bold !important; font-style:normal !important; font-size: 14px !important; padding-bottom:0 !important; } /* titles */
+.rss-item h2 a { font-style:italic !important; }
+	
+.rss-item .cover { 
+	width: 80px !important; 
+	padding:5px !important;    
+	background-color: #FFFFFF !important;
+    clear: right !important;
+    float: right !important;
+    margin: 0 !important;
+    text-align: center !important;
+}	
+.rss-item .cover img { width:75px !important; height:auto !important; border:none !important; }
+.rss-item .cover .buy_buttons { padding-top: 5px !important; }
+	
+.rss-date {
+	font-size: 11px !important;
+	font-weight : normal !important;
+	color: #F60 !important;
+	}
+	
+/* buttons modeled from http://www.wellstyled.com/css-inline-buttons.html */
+
+.pod-play {
+   _width:12em !important;
+   margin: 0 0.2em !important; padding: 0.1em 0 !important; _padding:0 !important;
+   
+   white-space:nowrap !important;
+   text-decoration: none !important;
+   vertical-align:middle !important;
+   background: #fb6 !important;
+   color: black !important;
+   }
+.pod-play em {
+   _width:1em !important; _cursor:hand !important;
+   font-style: normal !important;
+   margin:0 !important; padding: 0.1em 0.5em !important;
+   background: white !important;
+   color: #222 !important;
+   }
+.pod-play span {
+   _width:1em !important; _cursor:hand !important;
+   margin:0 !important; padding: 0.1em 0.5em 0.1em 0.3em !important;
+   }
+.pod-play:hover {
+   background: #666 !important;
+   color: white !important;
+   }
+.pod-play:hover em {
+   background: black !important;
+   color: white !important;
+   }
+ 

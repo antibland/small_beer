@@ -1,0 +1,9 @@
+/* alternative styling for print */
+body {
+	background: #FFFFFF;
+	color: #000000;
+	font: 12px Trebuchet MS, Arial, Helvetica, sans-serif;
+	margin: 0px auto;
+}
+	
+#header, #footer, #sidebar_l, #sidebar_r, .post-edit-link, #search { display:none; }

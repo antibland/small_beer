@@ -1,0 +1,254 @@
+@media screen and (min-width: 801px) {
+  .mobile-nav,
+  .mobile-nav-toggle {
+    display: none;
+
+  }
+}
+
+@media screen and (max-width: 800px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+
+  #footer {
+    width: 100%;
+  }
+
+  #content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #sidebar_l {
+    order: 2;
+  }
+
+  #header {
+    width: 100%;
+    background: #e1dcdc;
+  }
+
+  .header-breadcrumbs a {
+    font-family: 'Bellefair', serif;
+    color: black !important;
+    text-transform: uppercase;
+  }
+
+
+  #maincolumn,
+  #sidebar_l {
+    width: 88%;
+    margin: 0 auto;
+  }
+
+  #maincolumn-right {
+    width: auto;
+  }
+
+  #content ul li {
+    width: 100%;
+  }
+
+  #wrap {
+    max-width: 100%;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  #navbar {
+    border: none;
+  }
+
+  .navbarleft > p {
+    margin-left: 5px;
+    color: black;
+    font-family: 'Bellefair', serif;
+    font-size: 14px;
+  }
+
+  .navbarright {
+    display: none;
+  }
+
+  #content ul li#book .cover img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #content ul li#book {
+    width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+  }
+
+  #content ul li#book h3 {
+    display: none;
+  }
+
+  #content h2 {
+    border: none;
+  }
+
+  #currentbooks h2 {
+    display: none;
+  }
+
+  #content h2 span {
+    display: none;
+  }
+
+  #content ul li#book .cover {
+    width: auto;
+    float: none;
+  }
+
+  html body ul li#book div.cover div.buy_buttons div.buy_button {
+    font-size: 16px;
+  }
+
+  #content ul li#book p {
+    display: none;
+  }
+
+  .goog-te-gadget-simple {
+    display: none !important;
+  }
+
+  #search {
+    width: 100%;
+  }
+
+  #search ul {
+    display: none;
+  }
+
+  #search form {
+    padding-left: 14px;
+  }
+
+  [name="q"] {
+    width: 130px !important;
+    background: gray;
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-family: inherit;
+    font-size: 100%;
+    background: white url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+    border: solid 1px #ccc;
+    padding: 9px 10px 9px 32px;
+    width: 55px;
+    -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    border-radius: 10em;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+  }
+
+  [name="q"]:focus {
+    width: 100% !important;
+  }
+
+
+  html body ul li#book div.cover div.buy_buttons div.buy_button input {
+    background: #feb738;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 14px;
+    margin: 5px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+  }
+
+  html body ul li#book div.cover div.buy_buttons div.buy_button input:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+
+  .icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+
+  .mobile-nav {
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    background: black;
+    transform: translateY(-30%);
+    transition: 0.3s opacity, 0.3s transform, 0.3s visibility;
+  }
+
+  .mobile-nav a {
+    color: white;
+    font-size: 14px;
+    display: block;
+    padding: 10px 0;
+  }
+
+  .mobile-nav ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+  }
+
+  .mobile-nav li {
+    flex: 1 1 50%;
+  }
+
+  .mobile-nav.opened {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .mobile-nav-toggle {
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    -webkit-appearance: none;
+    right: 40px;
+    top: 11px;
+    font-size: 200%;
+    opacity: .6;
+  }
+
+  .mobile-nav-toggle:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.25em;
+    width: 1em;
+    height: 0.15em;
+    background: black;
+    box-shadow:
+      0 0.25em 0 0 black,
+      0 0.5em 0 0 black;
+  }
+}
