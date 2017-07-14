@@ -1,0 +1,873 @@
+/*
+  Theme Name: SBP
+  Theme URL: http://lcrw.net/
+  Description: SBP is a rather complicated custom theme created for Wordpress.
+  Author: MJD
+  Author URI: http://michaeljdeluca.com/
+  Version: 0.2
+
+  The CSS, XHTML and design is released under GPL:
+  http://www.opensource.org/licenses/gpl-license.php
+
+  Changelog:
+    v0.1 - 01.16.09 - based loosely on Modernpaper 1.0
+    v0.2 - 08.10.09 - lots more category customizations, tags, ability to list products as out of stock, etc.
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+br {
+    clear: none;
+}
+
+body {
+    background: #FFFFFF;
+    color: #000000;
+    font: 12px Trebuchet MS, Arial, Helvetica, sans-serif;
+    margin: 0px auto;
+}
+
+#wrap {
+    background: #FFFFFF;
+    width: 970px;
+    margin: 0px auto;
+}
+
+/************************************************
+* Hyperlinks                  *
+************************************************/
+
+a, a:visited {
+    color: #0066CC;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/************************************************
+* Header                    *
+************************************************/
+
+#header {
+    background: #003 url(images/header-bg.gif) center repeat-y;
+    width: 970px;
+    height: 75px;
+    margin: 0px auto;
+}
+
+.header-breadcrumbs {
+    font: 21px Georgia, Times New Roman, serif;
+    height: 40px;
+    color: #ccc;
+    padding: 15px 0px 0px 25px;
+}
+
+.header-breadcrumbs a, .header-breadcrumbs a:visited {
+    color: #eee;
+    text-decoration: none;
+}
+
+.header-breadcrumbs a:hover {
+    color: #3366CC;
+    text-decoration: underline;
+}
+
+.header-breadcrumbs a.blogtitle {
+}
+
+.header-breadcrumbs a.categorytitle {
+}
+
+.header-breadcrumbs a.entrytitle {
+}
+
+#navbar {
+    color: #eee;
+    width: 950px;
+    height: 28px;
+    font: 12px Trebuchet MS, Arial, serif;
+    margin: 0px auto 0px auto;
+    border-bottom: 1px dotted #000;
+}
+
+.navbarleft {
+    float: left;
+    padding: 0px 0px 0px 20px;
+}
+
+.navbarright {
+    float: right;
+    text-align: right;
+    padding: 0px 0px 0px 0px;
+}
+
+#navbar li {
+    display: inline;
+    list-style-type: none;
+}
+
+.navbarleft ul li a {
+    font: 12px Trebuchet MS, Arial, sans-serif;
+    line-height: 1.1em;
+    color: #eee;
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+    text-decoration: none;
+}
+
+.navbarright ul li a {
+    font: 13px Georgia, Times New Roman, serif;
+    line-height: 1em;
+    color: #eee;
+    padding: 0px;
+    margin: 0px 15px 0px 0px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: #3366CC;
+    text-decoration: underline;
+}
+
+
+/************************************************
+* Search                        *
+************************************************/
+
+#search {
+    width: 950px;
+    margin: 3px auto;
+    padding: 12px 0 12px 0;
+    font-size: 12px;
+}
+
+#search input {
+}
+
+#search ul {
+    display: inline;
+    list-style-type: none;
+}
+
+#search ul li {
+    display: inline;
+    list-style-type: none;
+    padding-left: 12px;
+    float: left;
+}
+
+#search ul li img {
+    border: 0;
+    margin-top: -2px;
+}
+
+#search form {
+    float: left;
+}
+
+#search #google_translate_element {
+}
+
+#search ul li#paypal_cart {
+    float: right;
+    font-size: 12px;
+}
+
+.goog-te-gadget .goog-te-combo {
+    margin: 0 !important;
+    width: 121px !important;
+}
+
+.goog-te-gadget img {
+    display: none !important;
+}
+
+.goog-te-combo, .goog-te-banner *, .goog-te-ftab *, .goog-te-menu *, .goog-te-menu2 *, .goog-te-balloon * {
+    font-family: auto !important;
+    font-size: auto !important;
+}
+
+/************************************************
+* Content                       *
+************************************************/
+
+#iceberg {
+    width: 132px;
+    height: 179px;
+    float: right;
+    border: none;
+    margin-top: -20px;
+    padding: 0 0 10px 10px;
+}
+
+#iceberg img {
+    border: 0;
+}
+
+#content {
+    width: 950px;
+    margin: 0px auto;
+    padding-top: 10px;
+}
+
+#content p {
+    margin: 1em 0;
+    padding: 0;
+    line-height: 20px;
+}
+
+#content h1 {
+    color: #333333;
+    font-size: 24px;
+    font-family: Times New Roman, Serif;
+    font-weight: normal;
+    padding: 15px 0px 10px 0px;
+}
+
+#content h1 a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#content h1 a:hover {
+    color: #cc0000;
+    text-decoration: none;
+}
+
+#content p img {
+    border: none;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 5px;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 5px;
+}
+
+#content h2 {
+    color: #333333;
+    font-size: 16px;
+    font-family: Times New Roman, Serif;
+    font-weight: bold;
+    padding: 20px 0px 3px 0px;
+    border-bottom: 1px dotted #000;
+    line-height: 1em;
+}
+
+#content h3 {
+    font-size: 14px;
+    font-family: Times New Roman, Serif;
+    font-weight: bold;
+}
+
+#content h3 a:hover {
+    text-decoration: underline;
+}
+
+//#content ul li#book {
+    text-align: center;
+    display: block;
+    float: left;
+    width: 160px;
+    height: 320px;
+    padding: 3px 10px 0 10px;
+}
+
+#content ul li#book p {
+    font-size: 11px;
+    line-height: 1.4em;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+}
+
+li#book img {
+    width: 100px;
+}
+
+#content ul li#book {
+    width: 230px;
+    height: 260px;
+    list-style-type: none;
+    display: block;
+    float: left;
+    text-align: left;
+    padding: 3px 11px 3px 0;
+}
+
+#content ul li#book .cover {
+    float: right;
+    text-align: center;
+    width: 106px;
+    padding: 3px;
+}
+
+#content ul li#book .cover img {
+    width: 100px;
+}
+
+#__GBS_Button0 {
+    padding: 0 51px;
+}
+
+#content .syndication {
+    font-style: italic;
+    margin-top: 15px;
+}
+
+html body ul li#book div.cover div.buy_buttons {
+    display: block;
+    margin: 0;
+    font-size: 0.9em;
+    letter-spacing: -0.5px;
+}
+
+html body ul li#book div.cover div.buy_buttons div.buy_button {
+    float: none;
+    padding: 0px;
+    text-align: center;
+}
+
+html body ul li#book div.cover div.buy_buttons div.buy_button a img {
+    width: auto !important;
+    padding: 0 17px;
+}
+
+html body ul li#book p {
+    font-size: 11px/1.3em;
+}
+
+html body ul li#book div.cover div.buy_buttons div.buy_button input {
+    font-size: .9em;
+}
+
+#content img {
+    border: none;
+}
+
+#content img.wp-smiley {
+    float: none;
+}
+
+#content img.wp-wink {
+    float: none;
+}
+
+#maincolumn {
+    float: left;
+    padding: 0px 0px 20px 0px;
+}
+
+#maincolumn ol {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 10px 0px;
+}
+
+#maincolumn ol li {
+    margin: 0px 0px 10px 10px;
+    padding: 0px 0px 0px 0px;
+}
+
+#maincolumn ul {
+    list-style-type: disc;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 10px 0px;
+}
+
+#maincolumn ul li {
+    line-height: 1.4em;
+}
+
+#maincolumn-left {
+    width: 500px;
+    margin: 0px 25px 0px 0px;
+    float: left;
+}
+
+#maincolumn-right {
+    width: 725px;
+    margin: 0px 0px 0px 0px;
+}
+
+#maincolumn-center {
+    width: 500px;
+    margin: 0px 25px 0px 0px;
+}
+
+blockquote {
+    margin: 0px 0px 10px 0px;
+    padding: 0px 25px 0px 10px;
+    background: #E8E8E8;
+    border-top: 2px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+#content blockquote p {
+    margin: 0px 0px 10px 0px;
+    padding: 10px 0px 0px 0px;
+}
+
+#maincolumn-left p.wp-caption-text {
+    text-align: center;
+}
+
+#news ul li {
+    width: 650px;
+    padding: 5px 5px 5px 0;
+    list-style-type: none;
+}
+
+#news p {
+    display: inline;
+}
+
+#news h2 {
+    padding-top: 0px;
+}
+
+#news h4 {
+    font-size: 14px;
+    font-family: Times New Roman, Serif;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+#news a {
+    font-weight: bold;
+}
+
+#post {
+    border-bottom: 1px solid #000000;
+    margin: 0 0 10px 0;
+}
+
+#cover {
+    background: white;
+    float: right;
+    padding: 5px 0 10px 0;
+    margin: -10px auto 0;
+    width: 200px;
+}
+
+#cover img {
+}
+
+.row1 {
+    background: #e8e8e8;
+}
+
+.row2 {
+    background: white;
+}
+
+//#maincolumn .buy_buttons {
+    display: inline-block;
+    margin-bottom: -10px;
+}
+//#maincolumn .buy_button {
+    float: left;
+    padding: 0 5px;
+    font-size: 0.9em;
+}
+//#maincolumn li#book .buy_button img {
+    width: auto !important;
+}
+
+table.specials {
+    float: right;
+    text-align: right;
+    vertical-align: middle;
+}
+
+table.specials td {
+    width: 220px;
+}
+
+table.specials td a img {
+    vertical-align: top;
+    float: right;
+    padding-left: 5px;
+}
+
+table.mailorder td {
+    padding: 0 2px;
+    vertical-align: top;
+}
+
+table.shopping td {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+}
+
+table.shopping table td {
+    width: 140px;
+    border: 0;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+#download-page-categories .category {
+    width: 100%;
+}
+
+.share {
+    float: right;
+    padding-right: 30px;
+}
+
+.share-inline {
+    display: inline;
+}
+
+.wp-pagenavi {
+    text-align: right;
+    line-height: 2.5em;
+}
+
+.wp-pagenavi span.pages, .wp-pagenavi a:visited, .wp-pagenavi a, .wp-pagenavi a:link, .wp-pagenavi span.current, .wp-pagenavi span.extend {
+    border: none !important;
+}
+
+
+/************************************************
+* Sidebar 1                     *
+************************************************/
+
+#sidebar_l {
+    float: left;
+    width: 190px;
+    margin: 0px 25px 0px 0px;
+    padding: 0px 0px 20px 0px;
+}
+
+#sidebar_l ul {
+    list-style: none;
+}
+
+#sidebar_l ul li {
+    display: inline;
+    margin-left: 5px;
+    line-height: 1.2em;
+}
+
+#sidebar_l p {
+    padding: 3px 0px 2px 0px;
+    margin: 0px;
+    line-height: 20px;
+    border-bottom: 1px dotted #C0C0C0;
+}
+
+#sidebar_l #celebrating p {
+    text-align: left;
+}
+
+#sidebar_l .prop {
+    height: 60px;
+    float: right;
+    width: 1px;
+}
+
+#sidebar_l #forthcoming h3 {
+}
+
+#sidebar_l #forthcoming p {
+    text-align: left;
+    font-size: 11px;
+    line-height: 1.4em;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    border: 0;
+}
+
+#sidebar_l #forthcoming img {
+    float: right;
+    width: 70px;
+    padding: 3px 0 0 3px;
+}
+
+#sidebar_l ul li ul li#book {
+    text-align: center;
+    line-height: 1.3em;
+    padding: 5px 0;
+    height: auto;
+    width: auto;
+    float: none;
+}
+
+#RSS ul li {
+    display: inline;
+}
+
+#menu ul li {
+    font-size: 11px;
+}
+
+#menu a {
+    font-weight: bold;
+    line-height: 1.1em;
+}
+
+#menu a.heading {
+    font-size: 12px;
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding: 2px 0px 2px 0px;
+}
+
+#menu a.heading:hover {
+    background: #EFEFEF;
+    color: #0066CC;
+}
+/************************************************
+*  Sidebar 2                      *
+************************************************/
+
+#sidebar_r {
+    float: right;
+    //text-align: center;
+    width: 200px;
+    margin: 0px 0px 0px 0px;
+    padding: 0 0 0 10px;
+    clear: right;
+}
+
+#sidebar_r ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#sidebar_r ul li {
+    display: block;
+    padding: 10px 0 0 0;
+    margin: 0px;
+}
+
+#sidebar_r ul li a {
+    color: #0066CC;
+    text-decoration: none;
+    margin: 0px;
+    padding: 3px 0px 3px 0px;
+/*  border-bottom: 1px dotted #C0C0C0; */
+}
+
+#sidebar_r ul li a:hover {
+    text-decoration: underline;
+    color: #0066CC;
+}
+
+#sidebar_r p {
+    padding: 3px 0px 0px 0px;
+    margin: 0px;
+    line-height: 20px;
+}
+
+#sidebar_r ul.buy {
+    background: #e8e8e8;
+    font: 10px Trebuchet MS, sans-serif;
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+    padding: 0 9px;
+    clear: both;
+}
+
+#sidebar_r ul.buy img {
+    border: 0;
+}
+
+#sidebar_r ul.buy a img {
+    border: 0;
+    float: right;
+    clear: both;
+}
+
+#sidebar_r ul.buy a {
+    color: #cc0000;
+}
+
+#sidebar_r ul.buy a:hover {
+    color: #cc0000;
+    text-decoration: underline;
+}
+
+#sidebar_r ul.buy table {
+    text-align: left;
+    border: 0;
+}
+
+#sidebar_r ul.buy table tr td {
+    height: 40px;
+    vertical-align: top;
+}
+
+#sidebar_r ul.buy table form {
+    float: right;
+}
+
+.twtr-doc {
+    margin: 0 0 15px 0px;
+}
+
+#twtr-widget-1 .twtr-bd, #twtr-widget-1 .twtr-timeline i a, #twtr-widget-1 .twtr-bd p {
+    color: #ddd !important;
+    font-family: Trebuchet MS, Arial, Helvetica, sans-serif !important;
+    font-size: 100%;
+}
+
+.twtr-hd {
+    display: none;
+}
+
+.twtr-bd {
+    padding: 0 !important;
+}
+
+.twtr-ft div {
+    display: none !important;
+}
+
+.twtr-widget .twtr-tweet {
+    border-bottom: none !important;
+}
+
+.twtr-widget .twtr-tweet-wrap {
+    padding: 6px 0px 8px !important;
+}
+
+.twtr-tweet-text {
+    margin-left: 0px !important;
+    font-size: 11px;
+}
+
+.twtr-widget h3, .twtr-widget h4, .twtr-widget p {
+}
+
+.twtr-avatar {
+    float: right !important;
+}
+
+.twtr-img {
+    padding-left: 5px;
+}
+
+
+/************************************************
+* Footer                      *
+************************************************/
+
+#footer {
+    background: #000 url(images/header-bg.gif) center repeat-y;
+    width: 950px;
+    height: 50px;
+    margin: 10px auto;
+    color: #eee;
+    font: 14px Trebuchet MS, Arial, sans-serif;
+    padding: 10px 0px 0px 0px;
+}
+
+#footer li {
+    display: inline;
+    list-style-type: none;
+}
+
+/************************************************
+* Comments                  *
+************************************************/
+
+#commentblock {
+    width: 430px;
+    background: #E8E8E8;
+    color: #000000;
+    float: left;
+    padding: 20px 20px 10px 20px;
+    margin: 10px 0px 0px 0px;
+    border-top: 2px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+#commentblock ol {
+    list-style-type: square;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 10px 0px;
+}
+
+.commentdate {
+    font-size: 12px;
+    padding-left: 0px;
+}
+
+#commentlist li p {
+    margin-bottom: 8px;
+    line-height: 20px;
+    padding: 0px;
+}
+
+.commentname {
+    color: #333333;
+    margin: 0px;
+    padding: 5px 5px 5px 0px;
+}
+
+.commentinfo {
+    clear: both;
+}
+
+.commenttext {
+    clear: both;
+    margin: 3px 0px 10px 0px;
+    padding: 20px 10px 5px 10px;
+    width: 380px;
+    background: #FFFFFF url(images/comment.gif) no-repeat top;
+}
+
+.commenttext-admin {
+    clear: both;
+    margin: 3px 0px 10px 0px;
+    padding: 20px 10px 5px 10px;
+    width: 380px;
+    background: #FFFFFF url(images/comment.gif) no-repeat top;
+}
+
+#commentsformheader {
+    padding-left: 0px;
+}
+
+#commentsform {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+#commentsform form {
+    text-align: left;
+    margin: 0px;
+}
+
+#commentsform p {
+    margin: 0px;
+}
+
+#commentsform form textarea {
+    width: 99%;
+}
+
+p.comments_link  img {
+    margin: 0px;
+    padding: 0px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+}
